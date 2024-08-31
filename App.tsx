@@ -1,15 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text } from "react-native";
+import React from "react";
+import DataComponent from "./screens/DataComponent";
 
-export default function App() {
-  return <View style={styles.container}></View>;
-}
+const App = () => {
+  return <DataComponent />;
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App;
